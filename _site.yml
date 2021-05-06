@@ -1,12 +1,12 @@
 name: "Network Analysis"
 output_dir: "."
 navbar:
-  title: "Network Analysis"
+  title: "Network Analysis Homework"
   left:
     - text: "Home"
       href: index.html
-    - text: "Project"
-      href: project.html
+    - text: "Analysis"
+      href: analysis.html
     - text: "About"
       href: about.html
 
