@@ -123,7 +123,7 @@ centr_betw(newnetwork, directed=T, normalized=T)
 
 ```
 
-```{r}
+```{r, echo=FALSE}
 centr_degree(newnetwork, mode="in", normalized=T)
 centr_clo(newnetwork, mode="all", normalized=T)
 centr_eigen(newnetwork, directed=T, normalized=T)

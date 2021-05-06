@@ -295,7 +295,6 @@ $(document).ready(function () {
 <pre><code>## [1] 34.65</code></pre>
 <p>Next, we assess the centrality functions of degree, closeness, the eigenvector, and betweenness.</p>
 <p>For <em>degree</em>, which lists the number of ties, the centrality score is .735. If we examine centrality based on distance to others in the graph, <em>closeness</em>, we view that the centrality score is 0.434. In terms of the <em>eigenvector</em>, which is centrality proportional to the sum of connection centralities, the centrality score is 0.67 (values of the first eigenvector). Finally, for <em>betweenness</em>, the score is 0.12.</p>
-<pre class="r"><code>centr_degree(newnetwork, mode=&quot;in&quot;, normalized=T)</code></pre>
 <pre><code>## $res
 ##  [1]  9 36  6 10 38 41  1 24 14 10  6 18 12  5 12  4  1 46 28 23 20 29 10  7  3  8 16 43 37 18 32 13 13 28
 ## [35] 25 27  2  9  1  8
@@ -305,7 +304,6 @@ $(document).ready(function () {
 ## 
 ## $theoretical_max
 ## [1] 1560</code></pre>
-<pre class="r"><code>centr_clo(newnetwork, mode=&quot;all&quot;, normalized=T)</code></pre>
 <pre><code>## $res
 ##  [1] 0.6964286 0.6290323 0.4482759 0.3362069 0.5342466 0.6500000 0.5064935 0.5909091 0.5270270 0.5342466
 ## [11] 0.4431818 0.4936709 0.4814815 0.3391304 0.5571429 0.4756098 0.4534884 0.6000000 0.5652174 0.6393443
@@ -317,7 +315,6 @@ $(document).ready(function () {
 ## 
 ## $theoretical_max
 ## [1] 19.24675</code></pre>
-<pre class="r"><code>centr_eigen(newnetwork, directed=T, normalized=T)</code></pre>
 <pre><code>## $vector
 ##  [1] 0.171564157 0.868913434 0.048436700 0.032365907 1.000000000 0.870212863 0.028849600 0.514868572
 ##  [9] 0.151136996 0.157017774 0.118210711 0.414511768 0.201179387 0.005053097 0.260510658 0.048019707
@@ -395,7 +392,6 @@ $(document).ready(function () {
 ## 
 ## $theoretical_max
 ## [1] 39</code></pre>
-<pre class="r"><code>centr_betw(newnetwork, directed=T, normalized=T)</code></pre>
 <pre><code>## $res
 ##  [1]  84.0616886  28.5512815   0.0000000   0.0000000  13.1250010  91.5637434  22.3636950   0.0000000
 ##  [9]   0.0000000   0.0000000   0.0000000   0.0000000   0.0000000   0.0000000  15.5350122   0.0000000
