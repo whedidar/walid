@@ -1,7 +1,7 @@
 ---
-title: "index"
-author: "Walid Hedidar"
-date: "5/6/2021"
+title: "Newtwork Analysis - Eels Group"
+author: "Created by: Walid Hedidar"
+date: "Date: 5/06/2021"
 output: html_document
 ---
 
@@ -9,22 +9,30 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
+<h2> Welcome! </h2>
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+This website summarizes a network analysis conducted on data from the BDS516 class. This tab includes details about the methodology/dataset. The Analysis tab will include details about the analysis and findings. Finally, the About tab will contain details about the contributors to the project. 
 
-```{r cars}
-summary(cars)
-```
+<h3> Methodology/Dataset </h3>
 
-## Including Plots
 
-You can also embed plots, for example:
+Our network analysis used data collected from a survey administered in BDS516 class. This survey sought to understand the different connections between different members of the class and the types of these connections, using the following scale: 
 
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
+1. I have texted in the last 7 days
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+2. I have met during my time in MBDS
+
+3. Is my friend
+
+4. I ask for advice/help
+
+5. Asks me for help/advice
+
+
+The survey also included a self-reporting of personality type using the following scale:
+
+1. Introverted
+2. Middle ground
+3. Extroverted
+
