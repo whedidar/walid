@@ -45,13 +45,13 @@ ceb <- cluster_edge_betweenness(newnetwork)
 
 ```{r, echo=FALSE}
 dendPlot(ceb, mode="hclust")
-length(ceb)
+
 
 
 ```
 We also created a figure built on community detection, based on *propagating labels*. This figure assigns node labels, randomizes, and then replaces each label with the label that is most frequent among its neighbors; this process halts after each vertex has the most common label of its neighbors. Briefly, the second plot shows each respondent encircled by a particular color; the type of color corresponds to the number of ties that the respondent has with other group members. 
 
-```{r}
+```{r, echo=FALSE}
 plot(ceb, newnetwork, vertex.size = 3, edge.arrow.size = 0.2)
 
 ```
@@ -97,7 +97,7 @@ Next, we assess the centrality functions of degree, closeness, the eigenvector, 
 
 For *degree*, which lists the number of ties, the centrality score is .735. If we examine centrality based on distance to others in the graph, *closeness*, we view that the centrality score is 0.434. In terms of the *eigenvector*, which is centrality proportional to the sum of connection centralities, the centrality score is 0.67 (values of the first eigenvector). Finally, for *betweenness*, the score is 0.12.
 
-```{r, echo=FALSE}
+```{r, echo=FALSE, include=FALSE}
 #Degree (number of ties)
 degree(newnetwork, mode="in")
 centr_degree(newnetwork, mode="in", normalized=T)
@@ -123,6 +123,13 @@ centr_betw(newnetwork, directed=T, normalized=T)
 
 ```
 
+```{r}
+centr_degree(newnetwork, mode="in", normalized=T)
+centr_clo(newnetwork, mode="all", normalized=T)
+centr_eigen(newnetwork, directed=T, normalized=T)
+centr_betw(newnetwork, directed=T, normalized=T)
+
+```
 
 ### Section 3: Measures of Similarity  &nbsp;
 
